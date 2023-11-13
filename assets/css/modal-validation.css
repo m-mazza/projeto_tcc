@@ -1,0 +1,50 @@
+#modal_validation .modal-header,
+#modal_val_contato .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+#modal_validation .modal-header h4,
+#modal_val_contato .modal-header h4 {
+    color: #000;
+    font-size: 22px;
+    font-weight: 800;
+}
+#modal_validation .modal-body,
+#mdoal_val_contato .modal-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4.5rem;
+}
+#modal_validation .modal-body p,
+#modal_val_contato .modal-body p {
+    margin: 0 !important;
+    font-size: 18px;
+}
+#modal_validation .modal-body span,
+#modal_val_contato .modal-body span {
+    color: #000;
+}
+#modal_validation .modal-footer,
+#modal_val_contato .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-top: 1px solid #e9ecef;
+    border-bottom-right-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+}
+#modal_validation .btn-main,
+#modal_val_contato .btn-main {
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 4px 70px;
+    border-radius: 4px;
+}

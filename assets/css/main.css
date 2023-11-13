@@ -1,0 +1,252 @@
+/* ---- Frameworks e css de bibliotecas ---- */
+@import 'bootstrap.css';
+@import 'line-awesome.css';
+@import 'nice-select.css';
+@import 'fonts.css';
+@import 'owl.carousel.css';
+@import 'modal-validation.css';
+
+
+/* ---- Código estilizado - itens gerais ---- */
+* { margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; }
+body { background-color: #f1f1f1; }
+a { color: #000;}
+a:hover { color: inherit; text-decoration: none; }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+p, a, ul, li {
+    font-family: 'Roboto', sans-serif;
+    color:  inherit;
+    text-decoration: none;
+}
+textarea, input, label {
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+}
+textarea::placeholder {
+    color: #b3b8bd !important;
+    font-size: 0.85rem !important;
+}
+
+
+/* ---- Classes Comuns ----*/
+/* [imagens] */
+.imgProd,
+.imgIntro,
+.bannerIntro {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ---- login ----*/
+#entrada {
+    height: 100vh;
+    background-color: #f1f1f1;
+    background-image: url(../img/institucional/pattern.png);
+    background-repeat: repeat;
+    background-position: left top;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#entrada .entradaWrapper {
+    background-color: #fff;
+    border-radius: 0.9rem;
+}
+#entrada .logoWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+} 
+#entrada .logoWrapper img {
+    width: 200px;
+}
+#entrada .loginArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+#entrada .restauranteArea {
+    min-height: 20vh;
+    width: 100%;
+}
+#entrada .restauranteArea .infoWrapper {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#entrada .restauranteArea .loginWrapper {
+    margin-bottom: 1rem;
+}
+#entrada .restauranteArea .loginWrapper .btn-primary:focus {
+    box-shadow: none;
+}
+#entrada .restauranteArea .infoWrapper h5 {
+    margin: 0;
+    color: #666666;
+}
+#entrada .restauranteArea .avisoArea .alert {
+    margin: 0;
+    color: #950000;
+    font-size: 0.9rem;
+}
+
+/* ---- Banner ----*/
+.bannerIntro {
+    height: 300px;
+}
+
+/* ---- Status do Restaurante  ----*/
+.restauranteInfo {
+    position: relative;
+    background-color: #f8f9fa;
+}
+.restauranteStatus {
+    position: absolute;
+    left: 0;
+    top: -25px;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    border-radius: 0.25rem;
+    color: #fff;
+}
+.RestaurantAddress { 
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; 
+}
+
+.container-cad {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Navegaçao ---*/
+.nav {
+    justify-content: center;
+    font-size: 0.85rem;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    background-color:#f1f1f1;
+    border-color:#dee2e6 #dee2e6 transparent ;
+    font-weight: 600;   
+}
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    border-color:#dee2e6 #dee2e6 transparent ;
+}
+.nav-tabs .nav-link {
+    border: 1px solid #dee2e6;
+    width: 33%;
+    text-align: center;
+}
+.categoriaArea {
+    background-color: #dbdbdb;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+
+/* --- Produto --- */
+.barra-produto {
+    border-bottom: 1px solid #000;
+    margin-bottom: 1rem;
+}
+.imgProd {
+    height: 350px;
+}
+.card-image {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 215px;
+}
+.card-image img {
+    width: 100%;
+}
+.input-group {
+    width: 35%;
+    height: calc(1.1em + 1.2rem);
+}
+#cart .form-control {
+    padding: 0;
+    height: calc(1.1em + 1.2rem);
+}
+.btn-increment,
+.btn-decrement {
+    width: 25%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(1.1em + 1.2rem);
+}
+.btn-increment {
+    border-radius: 0 0.25rem 0.25rem 0; 
+}
+.btn-decrement {
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+/*-- Carrinho finalizar -- */
+.cartWrapper {
+    min-height: 100vh;
+    position: relative;
+}
+.infoFinal p {
+    margin: 0;
+    line-height: 1.4em;
+    font-size: 0.9rem;
+}
+.infoFinal {
+    margin-bottom: 1.5rem;
+}
+#finalProd img {
+    border-radius: 8px;
+    width: 60px;
+    height: 60px;
+}
+#finalProd .input-group {
+    width: 25%;
+}
+#finalProd .prodInfo p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.3em;
+}
+#finalProd .prodInfo p:first-child {
+    font-weight: 600;
+}
+#finalProd .prodWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.finalarea {
+    border-top: 1px solid #000;
+    padding: 1.6rem 1.1rem 0.8rem 1.1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.barra-produto-final {
+    border-bottom: 1px solid #000;
+    margin-bottom: 2.5rem;
+}
+

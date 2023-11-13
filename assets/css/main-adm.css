@@ -1,0 +1,153 @@
+@import 'bootstrap.css';
+@import 'fonts.css';
+@import 'line-awesome.css';
+@import 'nice-select.css';
+@import 'owl.carousel.css';
+@import 'font-awesone-v6.2.0.css';
+@import 'modal-validation.css';
+
+/* --- CLASSES GERAIS --- */
+* { margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; }
+body { background-color: #f1f1f1; font-size: .875rem; }
+a { color: #000;}
+a:hover { color: inherit; text-decoration: none; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+p, a, ul, li { font-family: 'Roboto', sans-serif; color: inherit; text-decoration: none; }
+textarea, input, label { font-family: 'Roboto', sans-serif; resize: none; }
+textarea::placeholder { color: #b3b8bd !important; font-size: 0.85rem !important; }
+button, a { font-size: 0.8rem !important; }
+
+/* --- LOGIN --- */
+.loginAdmArea {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.institucionalWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.institucionalWrapper img {
+    width: 80%;
+}
+.loginAdmContent {
+    background-color: #c6c6c6;
+    padding: 3rem 2rem;
+    border-radius: 0.7rem;
+    color: #565555;
+    font-weight: 200;
+}
+.loginAdmContent form input::placeholder {
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #565555;
+}
+.redefinirArea {
+    margin-top: 1rem;
+    color: #565555;
+    text-align: center;
+}
+
+/* --- ESTRUTURA DO LAYOUT --- */
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+  
+/* --- SIDEBAR --- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 48px 0 0; /* Height of navbar */
+}
+  
+@media (max-width: 767.98px) {
+    .sidebar {
+        top: 5rem;
+    }
+}
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+        position: -webkit-sticky;
+        position: sticky;
+    }
+}
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+}
+.sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #999;
+}
+.sidebar .nav-link.active {
+    color: #007bff;
+}
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+    color: inherit;
+}
+.sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+.list-group-item {
+    background-color: transparent;
+}
+
+/* --- NAVBAR --- */
+.navbar-dark {
+    background-color: #565555 !important;
+}
+.navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    background-color: #565555;
+}
+.navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+}
+.navbar .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-color: #bebebe;
+}
+.form-control-dark {
+    color: #fff;
+    background-color: #9c9c9c;
+    border-radius:0 !important;
+}
+.form-control-dark::placeholder {
+    color: #fff;
+}
+.form-control-dark:focus {
+    border-color: #bebebe;
+}
+.btn-area {
+    width: 14%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-area-two {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
